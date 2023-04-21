@@ -1,0 +1,16 @@
+name: quake3
+owner_email: sample@example.com
+lang: python3:latest
+
+git:
+  remote: https://github.com/iszulcdeepsense/racetrack-quake
+  branch: master
+  directory: quake3
+
+python:
+  requirements_path: 'requirements.txt'
+  entrypoint_path: 'entrypoint.py'
+  entrypoint_class: 'JobEntrypoint'
+
+public_endpoints:
+  - '/api/v1/webview'
